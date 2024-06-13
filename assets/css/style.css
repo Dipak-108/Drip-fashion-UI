@@ -15,4 +15,154 @@
 html,body{
     width: 100%;
     height: 100%;
+    background-color:var(--background-color) ;
+
+
 }
+h1,p,a,button{
+    color:var(--orange-color-dark) ;
+}
+
+/* navigation bar css */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding:0.5rem 5rem;
+    align-items: center;
+    background-color: var(--light-color);
+}
+
+.navbar .menu ul{
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    
+    font-weight: 700;
+}
+
+.navbar .cart_login_icon{
+    display:flex ;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar .cart_login_icon button{
+    
+    border: 2px solid var(--orange-color-dark);
+    
+    font-size: 1.2rem;
+    width:5.5rem ;
+    height: 2.75rem;
+    text-align: center;
+    background:none
+}
+
+.navbar .toggle_hamburger{
+    display: none;
+    color: var(--orange-color-dark);
+    font-size: 3rem;
+}
+/* ################### Navbar css end ############################# */
+
+/* hero section css start */
+
+.container_hero{
+    width: 100%;
+    padding: 2rem 0rem;
+    display: flex;
+}
+
+.left_container{
+    width: 50%;
+    padding: 0rem 5rem;
+}
+
+.left_container h1{
+    font-size: 5rem;
+    line-height: 5rem;
+    
+    font-weight:400 ;
+    padding-bottom: 2rem;
+}
+
+.left_container p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    
+}
+
+.left_container button{
+    padding: 0.625rem;
+    margin-top: 0.625rem;
+    border:none;
+    background-color: var(--orange-color-dark);
+    color: white ;
+    width: 10.75rem;
+    font-size: 1rem;
+    
+}
+
+.hero_image_container{
+    max-width:27rem ;
+    max-height: 35rem;
+    /* border: solid; */
+    overflow: hidden;
+    
+}
+
+.hero_image_container img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+/* Media Query Start */
+@media only screen and (max-width: 768px){
+    
+    .navbar .menu{
+        display: none;
+    }
+
+    .navbar .cart_login_icon{
+        display: none;
+    }
+
+    .navbar .toggle_hamburger{
+        display: inline-block;
+    }
+
+    /* hero section responsive */
+
+    .container_hero{
+        flex-direction: column;
+    }
+
+    .left_container{
+        width: 100%;
+        /* text-align: center; */
+    }
+    .left_container h1{
+        font-size: 4rem;
+    }
+
+    .right_container{
+        width: 100%;
+    }
+    .hero_image_container{
+        margin: auto;
+    }
+
+
+
+}
+
