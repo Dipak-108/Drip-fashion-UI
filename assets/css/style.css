@@ -19,7 +19,7 @@ html,body{
 
 
 }
-h1,p,a,button{
+h1,h2,h3,p,a,button{
     color:var(--orange-color-dark) ;
 }
 
@@ -31,6 +31,7 @@ h1,p,a,button{
     padding:0.5rem 5rem;
     align-items: center;
     background-color: var(--light-color);
+    width: 100%;
 }
 
 .navbar .menu ul{
@@ -73,8 +74,10 @@ a{
 
 .container_hero{
     width: 100%;
-    padding: 2rem 0rem;
+    padding: 1.5rem 0rem;
     display: flex;
+    background-color:var(--light-color) ;
+    margin-bottom: 4rem;
 }
 
 .left_container{
@@ -107,20 +110,170 @@ a{
     font-size: 1rem;
     
 }
+.right_container{
+    width: 50%;
+}
 
 .hero_image_container{
     max-width:27rem ;
-    max-height: 35rem;
+    max-height: 30rem;
     /* border: solid; */
     overflow: hidden;
+    margin: auto;
+    background-color: #c86f3d;
+    border-radius: 50px;
     
 }
 
 .hero_image_container img{
     width: 100%;
-    height: auto;
-    display: block;
+    object-fit: contain;
 }
+
+/* ################### Hero Section CSS end ############################# */
+
+
+/* ##### best Selling section start #### */
+
+.best_selling_section h1{
+font-size: 4rem;
+font-weight: 400;
+color: var(--orange-color-dark);
+text-align: center;
+}
+
+.best_selling_card_container{
+display: flex;
+justify-content: center;
+gap: 4rem;
+flex-wrap: wrap;
+padding: 3rem 0rem ;
+
+/* border: solid; */
+/* flex: 1 0 350px; */
+}
+
+.best_selling_card_container .card{
+background-color: var(--medium-color);
+max-width: 20rem;
+border-radius: 10px;
+
+}
+
+.best_selling_card_container .card img{
+    width: 100%;
+    height: auto;
+}
+
+.card .card_img{
+    max-height: 78%;
+    overflow: hidden;
+}
+
+.best_selling_card_container .card h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+}
+
+ .best_selling_price_rating{
+    color: var(--orange-color-dark);
+    font-size:1.5rem ;
+    text-align: center;
+}
+
+.rating{
+    padding-left: 1rem;
+    border-left: solid var(--orange-color-dark) ;
+}
+.best_selling_price{
+    padding-right: 1rem;
+}
+
+.star{
+    color: rgb(249, 217, 36);
+}
+
+.best_selling_seemore{
+    display: block;
+    padding: 0.7rem;
+    margin: auto;
+    border: 2px solid var(--orange-color-dark);
+    font-weight: 500;
+    font-size: 1.5rem;
+    background:none
+}
+
+/* ################### best Selling Section CSS end ############################# */
+
+
+
+
+
+/*################# Categories Section start################*/
+.categories_container{
+    margin-top: 5rem;
+}
+.categories_container h1{
+font-size: 4rem;
+font-weight: 400;
+text-align: center;
+}
+
+.categories_container .cat_button_div{
+    display: flex;
+    /* border: solid; */
+    justify-content: center;
+    flex-shrink: 1;
+    
+}
+
+
+
+.cat_button_div .categories_buttons button{
+    box-sizing: border-box;
+    width: max-content;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    margin: 1rem 1rem;
+    border: 2px solid transparent;
+    font-weight:500;
+    background: none;
+    cursor: pointer;
+}
+
+.cat_button_div .categories_buttons button:hover{
+    border-bottom: 2px solid;
+}
+
+.categories_card_container{
+    
+    padding:0rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,280px));
+    gap: 2rem;
+    justify-content: center;
+    
+}
+
+.categories_card_container .cat_card h3{
+    
+text-align: center;
+padding-bottom: 0.5rem;
+}
+
+
+
+
+
+/* ################### categories Section CSS end ############################# */
+
+
+
+
+
+
 
 
 
@@ -128,7 +281,10 @@ a{
 
 /* Media Query Start */
 @media only screen and (max-width: 768px){
-    
+    .navbar{
+       width: 100%; 
+       padding:0.5rem 2rem;
+    }
     .navbar .menu{
         display: none;
     }
@@ -148,7 +304,9 @@ a{
     }
 
     .left_container{
-        width: 100%;
+        width: 90%;
+        
+        margin: 5%;
         /* text-align: center; */
     }
     .left_container h1{
@@ -156,12 +314,20 @@ a{
     }
 
     .right_container{
-        width: 100%;
+        width: 90%;
+        
+        margin: 5%;
     }
+
     .hero_image_container{
         margin: auto;
     }
 
+    .cat_button_div .categories_buttons button{
+        padding: 0.5rem 1rem;
+    }
+
+    
 
 
 }
