@@ -1,278 +1,473 @@
-:root{
-    --background-color:#EEF1EB;
-    --orange-color-dark:#C84801;
-    --light-color:#D8BA94;
-    --medium-color:#D09D73;
-    --dark-color:##261308
+:root {
+  --background-color: #eef1eb;
+  --orange-color-dark: #c84801;
+  --light-color: #d8ba94;
+  --medium-color: #d09d73;
+  --dark-color: ##261308;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-    width: 100%;
-    height: 100%;
-    background-color:var(--background-color) ;
-
-
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
 }
-h1,h2,h3,p,a,button{
-    color:var(--orange-color-dark) ;
+h1,
+h2,
+h3,
+p,
+a,
+button {
+  color: var(--orange-color-dark);
 }
 
 /* navigation bar css */
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    padding:0.5rem 5rem;
-    align-items: center;
-    background-color: var(--light-color);
-    width: 100%;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 5rem;
+  align-items: center;
+  background-color: var(--light-color);
+  width: 100%;
 }
 
-.navbar .menu ul{
-    display: flex;
-    gap: 3rem;
-    list-style-type: none;
+.navbar .menu ul {
+  display: flex;
+  gap: 3rem;
+  list-style-type: none;
 }
 
-a{
-    text-decoration: none;
-    
-    font-weight: 700;
+a {
+  text-decoration: none;
+
+  font-weight: 700;
 }
 
-.navbar .cart_login_icon{
-    display:flex ;
-    align-items: center;
-    gap: 2rem;
+.navbar .cart_login_icon {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
-.navbar .cart_login_icon button{
-    
-    border: 2px solid var(--orange-color-dark);
-    
-    font-size: 1.2rem;
-    width:5.5rem ;
-    height: 2.75rem;
-    text-align: center;
-    background:none
+.navbar .cart_login_icon button {
+  border: 2px solid var(--orange-color-dark);
+
+  font-size: 1.2rem;
+  width: 5.5rem;
+  height: 2.75rem;
+  text-align: center;
+  background: none;
 }
 
-.navbar .toggle_hamburger{
-    display: none;
-    color: var(--orange-color-dark);
-    font-size: 3rem;
+.navbar .toggle_hamburger {
+  display: none;
+  color: var(--orange-color-dark);
+  font-size: 3rem;
 }
 /* ################### Navbar css end ############################# */
 
 /* hero section css start */
 
-.container_hero{
-    width: 100%;
-    padding: 1.5rem 0rem;
-    display: flex;
-    background-color:var(--light-color) ;
-    margin-bottom: 4rem;
+.container_hero {
+  width: 100%;
+  padding: 1.5rem 0rem;
+  display: flex;
+  background-color: var(--light-color);
+  margin-bottom: 4rem;
 }
 
-.left_container{
-    width: 50%;
-    padding: 0rem 5rem;
+.left_container {
+  width: 50%;
+  padding: 0rem 5rem;
 }
 
-.left_container h1{
-    font-size: 5rem;
-    line-height: 5rem;
-    
-    font-weight:400 ;
-    padding-bottom: 2rem;
+.left_container h1 {
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
 }
 
-.left_container p{
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 2.25rem;
-    
+.left_container p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.25rem;
 }
 
-.left_container button{
-    padding: 0.625rem;
-    margin-top: 0.625rem;
-    border:none;
-    background-color: var(--orange-color-dark);
-    color: white ;
-    width: 10.75rem;
-    font-size: 1rem;
-    
+.left_container button {
+  padding: 0.625rem;
+  margin-top: 0.625rem;
+  border: none;
+  background-color: var(--orange-color-dark);
+  color: white;
+  width: 10.75rem;
+  font-size: 1rem;
 }
-.right_container{
-    width: 50%;
-}
-
-.hero_image_container{
-    max-width:27rem ;
-    max-height: 30rem;
-    /* border: solid; */
-    overflow: hidden;
-    margin: auto;
-    background-color: #c86f3d;
-    border-radius: 50px;
-    
+.right_container {
+  width: 50%;
 }
 
-.hero_image_container img{
-    width: 100%;
-    object-fit: contain;
+.hero_image_container {
+  max-width: 27rem;
+  max-height: 30rem;
+  overflow: hidden;
+  margin: auto;
+  background-color: #c86f3d;
+  border-radius: 50px;
+}
+
+.hero_image_container img {
+  width: 100%;
+  object-fit: contain;
 }
 
 /* ################### Hero Section CSS end ############################# */
 
-
 /* ##### best Selling section start #### */
 
-.best_selling_section h1{
-font-size: 4rem;
-font-weight: 400;
-color: var(--orange-color-dark);
-text-align: center;
+.best_selling_section h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  color: var(--orange-color-dark);
+  text-align: center;
 }
 
-.best_selling_card_container{
-display: flex;
-justify-content: center;
-gap: 4rem;
-flex-wrap: wrap;
-padding: 3rem 0rem ;
+.best_selling_card_container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  padding: 3rem 0rem;
 
-/* border: solid; */
-/* flex: 1 0 350px; */
+  /* border: solid; */
+  /* flex: 1 0 350px; */
 }
 
-.best_selling_card_container .card{
-background-color: var(--medium-color);
-max-width: 20rem;
-border-radius: 10px;
-
+.best_selling_card_container .card {
+  background-color: var(--medium-color);
+  max-width: 20rem;
+  border-radius: 10px;
 }
 
-.best_selling_card_container .card img{
-    width: 100%;
-    height: auto;
+.best_selling_card_container .card img {
+  width: 100%;
+  height: auto;
 }
 
-.card .card_img{
-    max-height: 78%;
-    overflow: hidden;
+.card .card_img {
+  max-height: 78%;
+  overflow: hidden;
 }
 
-.best_selling_card_container .card h3{
-    text-align: center;
-    font-weight: 600;
-    font-size: 1.5rem;
-    margin-top: 0.3rem;
+.best_selling_card_container .card h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 0.3rem;
 }
 
- .best_selling_price_rating{
-    color: var(--orange-color-dark);
-    font-size:1.5rem ;
-    text-align: center;
+.best_selling_price_rating {
+  color: var(--orange-color-dark);
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-.rating{
-    padding-left: 1rem;
-    border-left: solid var(--orange-color-dark) ;
+.rating {
+  padding-left: 1rem;
+  border-left: solid var(--orange-color-dark);
 }
-.best_selling_price{
-    padding-right: 1rem;
-}
-
-.star{
-    color: rgb(249, 217, 36);
+.best_selling_price {
+  padding-right: 1rem;
 }
 
-.best_selling_seemore{
-    display: block;
-    padding: 0.7rem;
-    margin: auto;
-    border: 2px solid var(--orange-color-dark);
-    font-weight: 500;
-    font-size: 1.5rem;
-    background:none
+.star {
+  color: rgb(249, 217, 36);
+}
+
+.best_selling_seemore {
+  display: block;
+  padding: 0.7rem;
+  margin: auto;
+  border: 2px solid var(--orange-color-dark);
+  font-weight: 500;
+  font-size: 1.5rem;
+  background: none;
 }
 
 /* ################### best Selling Section CSS end ############################# */
 
-
-
-
-
 /*################# Categories Section start################*/
-.categories_container{
-    margin-top: 5rem;
+.categories_container {
+  margin-top: 5rem;
 }
-.categories_container h1{
-font-size: 4rem;
-font-weight: 400;
-text-align: center;
-}
-
-.categories_container .cat_button_div{
-    display: flex;
-    /* border: solid; */
-    justify-content: center;
-    flex-shrink: 1;
-    
+.categories_container h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
 }
 
-
-
-.cat_button_div .categories_buttons button{
-    box-sizing: border-box;
-    width: max-content;
-    padding: 0.5rem 2rem;
-    font-size: 1rem;
-    margin: 1rem 1rem;
-    border: 2px solid transparent;
-    font-weight:500;
-    background: none;
-    cursor: pointer;
+.categories_container .cat_button_div {
+  display: flex;
+  /* border: solid; */
+  justify-content: center;
+  flex-shrink: 1;
 }
 
-.cat_button_div .categories_buttons button:hover{
-    border-bottom: 2px solid;
+.cat_button_div .categories_buttons button {
+  box-sizing: border-box;
+  width: max-content;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  margin: 1rem 1rem;
+  border: 2px solid transparent;
+  font-weight: 500;
+  background: none;
+  cursor: pointer;
 }
 
-.categories_card_container{
-    
-    padding:0rem 4rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,280px));
-    gap: 2rem;
-    justify-content: center;
-    
+.cat_button_div .categories_buttons button:hover {
+  border-bottom: 2px solid;
 }
 
-.categories_card_container .cat_card h3{
-    
-text-align: center;
-padding-bottom: 0.5rem;
+.categories_card_container {
+  padding: 0rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 280px));
+  gap: 2rem;
+  justify-content: center;
 }
 
-
-
-
+.categories_card_container .cat_card h3 {
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
 
 /* ################### categories Section CSS end ############################# */
 
+/*######### Exclusive offer Section Start #########*/
+
+.offer_div_container {
+  display: flex;
+  /* margin: 5rem 5rem 0 5rem; */
+  /* flex-wrap: wrap; */
+  width: 90%;
+  margin: auto;
+  margin-top: 5rem;
+  background-color: #dfcbae;
+}
+
+.offer_div_container .offer_div_left {
+  width: 40%;
+}
+
+.offer_div_container .offer_div_left_image {
+  min-width: 21rem;
+  /* background-color: #C84801; */
+  margin-left: 1rem;
+  border-radius: 10px;
+}
+
+.offer_div_container .offer_div_left_image img {
+  width: 80%;
+  object-fit: contain;
+}
+
+.offer_div_container .offer_div_right {
+  min-width: 60%;
+}
+
+.offer_div_container h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 2rem;
+}
+
+.offer_div_container p {
+  padding: 0rem 8rem 2rem 2rem;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+.offer_div_container .timer_div {
+  padding-left: 2rem;
+}
+
+.timer_div .timer {
+  display: inline-block;
+  background: #eef1eb;
+  padding: 2rem 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.timer_div .dhm {
+  display: block;
+  font-size: 1rem;
+}
+
+.exc_offer_button_div {
+  padding-left: 2rem;
+  padding: 1rem;
+}
+
+.offer_div_right button {
+  background-color: var(--orange-color-dark);
+  color: #dfcbae;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+/* ################### Exclusive offer Section CSS end ############################# */
+
+/* ############### feedback Section start ############## */
+
+.feedback_section {
+  padding: 4rem;
+}
+.feedback_section .feedback_header {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+  line-height: 3rem;
+  padding-bottom: 2rem;
+}
+
+.feedbacks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 20rem));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.feedback_card {
+  padding: 0rem 2rem 2rem 2rem;
+  h1 {
+    font-size: 6rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    padding: 0rem 0rem 1rem 0;
+  }
+
+  p {
+    color: black;
+    text-align: justify;
+  }
+}
+.feedback_card2 {
+  background: #dfcbae;
+}
+
+.feedback_button_div .slider_button {
+    
+    padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  
+  gap: 1rem;
+}
+
+.slider_button button{
+    
+    
+    font-size: 2.5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+    
+}
+
+/* ################### feedback Section CSS end ############################# */
 
 
 
 
+/*############### footer Section CSS start ######### */
+
+.footer{
+    background-color: var(--orange-color-dark);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    padding: 4rem 4rem;
+    place-items: center;
+    
+}
+
+.footer a,h3,p,img{
+    color: #DFCBAE;
+    padding-bottom: 0.1rem;
+}
+.logo_and_sm h3,
+.footer_shop h3,
+.footer_company h3,
+.get_in_touch h3{
+font-size: 1.5rem;
+}
+
+.footer_shop p,
+.footer_company p{
+    font-size: 1.5rem;
+    font-weight: 100;
+    
+}
+
+.logo_and_sm,
+.footer_shop,
+.footer_company,
+.get_in_touch{
+    padding-top: 3rem;
+}
+
+.get_in_touch input[type="email"]{
+   
+    padding: 0.5rem;
+    width: 13rem;
+    border: 1px solid white;
+    font-size: 1rem;
+    background:var(--orange-color-dark);
+    color: #eef1eb;
+}
+.get_in_touch input[type="submit"]{
+    
+    padding: 0.5rem;
+    width: 5rem;
+    font-size: 1rem;
+    background: #eef1eb;
+    color: black;
+    border: none;
+
+}
+
+.footer_terms_privacy{
+    background-color: var(--orange-color-dark);
+    display: flex;
+    justify-content: flex-end;
+    padding:0 4rem 3rem 0;
+    
+    
+    
+}
+.terms_and_cookies a{
+    display: inline-block;
+    margin:0rem  1rem;
+    /* border: solid; */
+    /* float: right; */
+}
+
+
+
+
+
+/* ################### feedback Section CSS end ############################# */
 
 
 
@@ -280,55 +475,63 @@ padding-bottom: 0.5rem;
 
 
 /* Media Query Start */
-@media only screen and (max-width: 768px){
-    .navbar{
-       width: 100%; 
-       padding:0.5rem 2rem;
-    }
-    .navbar .menu{
-        display: none;
-    }
+@media only screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    padding: 0.5rem 2rem;
+  }
+  .navbar .menu {
+    display: none;
+  }
 
-    .navbar .cart_login_icon{
-        display: none;
-    }
+  .navbar .cart_login_icon {
+    display: none;
+  }
 
-    .navbar .toggle_hamburger{
-        display: inline-block;
-    }
+  .navbar .toggle_hamburger {
+    display: inline-block;
+  }
 
-    /* hero section responsive */
+  /* hero section responsive */
 
-    .container_hero{
-        flex-direction: column;
-    }
+  .container_hero {
+    flex-direction: column;
+  }
 
-    .left_container{
-        width: 90%;
-        
-        margin: 5%;
-        /* text-align: center; */
-    }
-    .left_container h1{
-        font-size: 4rem;
-    }
+  .left_container {
+    width: 90%;
 
-    .right_container{
-        width: 90%;
-        
-        margin: 5%;
-    }
+    margin: 5%;
+    /* text-align: center; */
+  }
+  .left_container h1 {
+    font-size: 4rem;
+  }
 
-    .hero_image_container{
-        margin: auto;
-    }
+  .right_container {
+    width: 90%;
 
-    .cat_button_div .categories_buttons button{
-        padding: 0.5rem 1rem;
-    }
+    margin: 5%;
+  }
 
-    
+  .hero_image_container {
+    margin: auto;
+  }
 
+  .cat_button_div .categories_buttons button {
+    padding: 0.5rem 1rem;
+  }
 
+  .offer_div_container {
+    flex-wrap: wrap;
+  }
+
+  .offer_div_container .offer_div_left {
+    width: 100%;
+  }
+
+  .offer_div_container .offer_div_left_image {
+    width: 50%;
+    margin: auto;
+  }
 }
-
